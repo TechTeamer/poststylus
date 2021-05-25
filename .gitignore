@@ -4,3 +4,6 @@ node_modules
 # Runtime
 *.log
 .DS_Store
+
+# Jetbrains IDEs
+.idea

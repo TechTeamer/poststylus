@@ -1,12 +1,11 @@
-'use strict';
-var path = require('path'),
-    postcss = require('postcss');
+const path = require('path')
+const postcss = require('postcss')
 
-var fake = function() {
-  var mocks = require(path.join(__dirname, 'mocks'));
-  var deps = { postcss: postcss };
+const fake = function () {
+  const mocks = require(path.join(__dirname, 'mocks'))
+  const deps = { postcss: postcss }
 
-  return mocks(deps).plugin;
-};
+  return mocks(deps).plugin
+}
 
-module.exports = fake;
+module.exports = fake
